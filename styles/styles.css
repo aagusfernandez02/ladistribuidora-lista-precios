@@ -1,0 +1,122 @@
+/* ESCALA COLORES: https://www.canva.com/colors/color-palettes/here-at-home/ */
+
+/* GLOBALES */
+
+:root {
+    /* Colors */
+    --blue-gray: #647C90;
+    --cool-gray: #4E4F50;
+    --gray: #746C70;
+    --ivory: #E2DED0;
+    --red: #970C10;
+    --teal: #01949A;
+    /* Sizes */
+    --height-header: 75px;
+}
+
+*,
+a,
+p,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+/* INDEX */
+
+header {
+    background-color: var(--cool-gray);
+    width: 100%;
+    height: var(--height-header);
+    padding: 0 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: var(--ivory);
+    position: fixed;
+}
+
+main {
+    padding-top: var(--height-header);
+}
+
+.logo_negrita {
+    font-weight: bold;
+}
+
+.col-img {
+    width: 150px;
+}
+
+.img-producto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+tbody td {
+    font-size: 1rem;
+}
+.col-control-icon{
+    width: 30px;
+}
+.control-icon{
+    font-size: 30px;
+    color: var(--cool-gray);
+}
+.icon-edit{
+    color: var(--teal);
+}
+.icon-delete{
+    color: var(--red);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .col-img {
+        width: 125px;
+    }
+
+    .img-producto {
+        width: 125px;
+        height: 125px;
+    }
+
+    tbody td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-img {
+        width: 110px;
+    }
+
+    .img-producto {
+        width: 110px;
+        height: 110px;
+    }
+
+    tbody td {
+        font-size: 0.8rem;
+    }
+}

@@ -53,6 +53,12 @@ header {
     position: fixed;
 }
 
+.login{
+    border: none;
+    background-color: inherit;
+    color: inherit;
+}
+
 main {
     padding-top: var(--height-header);
 }
